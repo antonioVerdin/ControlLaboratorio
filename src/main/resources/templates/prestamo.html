@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Time Watch</title><meta http-equiv="content-type" content="text/html;charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="e-commerce site well design with responsive view." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css}" rel="stylesheet" media="screen" />
+    <link th:href="@{/font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{https://fonts.googleapis.com/css?family=Roboto:300,400,500,700}" rel="stylesheet">
+    <link th:href="@{/css/stylesheet.css}" rel="stylesheet">
+    <link th:href="@{/css/responsive.css}" rel="stylesheet">
+    <link th:href="@{/owl-carousel/owl.carousel.css}" type="text/css" rel="stylesheet" media="screen" />
+    <link th:href="@{/owl-carousel/owl.transitions.css}" type="text/css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" th:href="@{/bootstrap/css/glyphicons.css}" type="text/css">
+    <script th:src="@{/javascript/jquery-2.1.1.min.js}" type="text/javascript"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}" type="text/javascript}"></script>
+    <script type="text/javascript" th:src="@{/javascript/jstree.min.js}"></script>
+    <script type="text/javascript" th:src="@{/javascript/template.js}"></script>
+    <script th:src="@{/javascript/common.js}" type="text/javascript"></script>
+    <script th:src="@{/javascript/global.js}" type="text/javascript"></script>
+    <script th:src="@{/owl-carousel/owl.carousel.min.js}" type="text/javascript"></script>
+
+</head>
+<body class="category col-2 left-col">
+<div class="preloader loader" style="display: block; background:#f2f2f2;"> <img src="image/loader.gif"  alt="#"/></div>
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="top-left pull-left">
+            <div class="language">
+              <form action="#" method="post" enctype="multipart/form-data" id="language">
+                <div class="btn-group">
+                  <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="image/flags/gb.png" alt="English" title="English">English <i class="fa fa-caret-down"></i></button>
+                  <ul class="dropdown-menu">
+
+                    <li><a href="#"><img src="image/flags/gb.png" alt="English" title="English"> English</a></li>
+                  </ul>
+                </div>
+              </form>
+
+            </div>
+            <div class="currency">
+              <form action="#" method="post" enctype="multipart/form-data" id="currency">
+                <div class="btn-group">
+
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="top-right pull-right">
+            <div id="top-links" class="nav pull-right">
+              <ul class="list-inline">
+                <li class="dropdown account"><a href="#" title="My Account" class="  dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i><span>Mi cuenta</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="login.html">Cerrar Sesion</a></li>
+                  </ul>
+                </li>
+
+              <div class="search-box">
+                <input class="input-text" placeholder="Search By Products.." type="text">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header-inner">
+      <div class="col-sm-4 col-xs-6 header-left">
+
+      </div>
+      <div class="col-sm-4 col-xs-12 header-right">
+
+      </div>
+    </div>
+    <nav id="menu" class="navbar">
+      <div class="nav-inner">
+        <div class="navbar-header"><span id="category" class="visible-xs">Presmos</span>
+          <button type="button" class="btn btn-navbar navbar-toggle" ><i class="fa fa-bars"></i></button>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <ul class="breadcrumb">
+    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+    <li><a href="prestamo.html">Prestamos</a></li>
+  </ul>
+  <div class="row">
+    <div id="column-left" class="col-sm-3 hidden-xs column-left">
+      <div class="row special-grid product-grid">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+          <div class="product-thumb transition">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+        </div>
+      </div>
+    </div>
+    <div id="content" class="col-sm-9">
+      <div class="row category-banner">
+
+          <form class="form-horizontal" enctype="multipart/form-data" method="post" action="">
+              <fieldset id="account">
+                  <legend>Busqueda de Usuario</legend>
+                  <div class="form-group required">
+                      <label for="id" class="col-sm-2 control-label">ID Usuario</label>
+                      <div class="col-sm-10">
+                          <input type="id" class="form-control" id="id" placeholder="Matricula o Numero De Empleado" value="" >
+                      </div>
+                  </div>
+                  <br>
+                  <br>
+              </fieldset>
+
+
+
+              <div class="buttons">
+                  <div class="pull-right"><a class="" href="#"><b></b></a>
+                      &nbsp;
+                      <input type="submit" class="btn btn-primary" value="Buscar">
+                  </div>
+
+                  </div>
+
+              </div>
+          </form>
+
+     </div>
+        <H1>aqui</H1>
+      <br />
+      <div class="grid-list-wrapper">
+        <div class="product-layout product-list col-xs-12">
+            <H1>aqui</H1>
+        </div>
+      </div>
+      <H1>aqui</H1>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+  <hr>
+    <div class="row">
+ </div>
+
+  </div>
+  <a id="scrollup">Scroll</a> </footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="copyright"> <div class="footer-bottom-cms">
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
